@@ -16,6 +16,19 @@
   text-transform: uppercase;
 }
 
+.jumbotron {
+  width: 100%;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 .blue-bar {
   background-color: #4477e0;
   color: white;

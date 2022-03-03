@@ -14,6 +14,9 @@
     </header>
 
     <main>
+        <div class="jumbotron">
+            <img src=" {{asset('images/jumbotron.jpg')}} " alt="">
+        </div>
         @yield('section-1')
         @yield('section-2')
     </main>
