@@ -33,13 +33,24 @@ img {
     padding:  0 15px;
     height: 80px;
     text-transform: uppercase;
-    font-weight: 500;
     line-height: 80px;
     border-bottom: 3px transparent solid; 
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+   &:hover a {
+    color: rgb(68, 119, 224);
+   }
 }
 .navbar ul li:hover {
     border-color: rgb(68, 119, 224);
-    color: rgb(68, 119, 224);
+    
+    
 }
 
 .navbar input {

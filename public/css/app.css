@@ -67,14 +67,24 @@ img {
   padding: 0 15px;
   height: 80px;
   text-transform: uppercase;
-  font-weight: 500;
   line-height: 80px;
   border-bottom: 3px transparent solid;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li:hover a {
+  color: #4477e0;
 }
 
 .navbar ul li:hover {
   border-color: #4477e0;
-  color: #4477e0;
 }
 
 .navbar input {
