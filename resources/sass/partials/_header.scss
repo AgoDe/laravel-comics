@@ -1,72 +1,74 @@
 .blue-bar {
     background-color:rgb(68, 119, 224);
-    color: white;    
-}
-.blue-bar > .container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 20px;
-    
-}
-.blue-bar .container div {
-    margin: 0 15px;
-    font-size: 11px;
+    color: white;   
+
+    .container {
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+       height: 20px;
+       
+       div {
+           margin: 0 15px;
+           font-size: 11px;
+       }
+   }
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
-img {
-    height: 60px;
-}
-.navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
 
-}
-.navbar ul li {
-    font-size: 13px;
-    padding:  0 15px;
-    height: 80px;
-    text-transform: uppercase;
-    line-height: 80px;
-    border-bottom: 3px transparent solid; 
-    color: black;
-    font-weight: 500;
-    text-decoration: none;
-
-    a {
-        text-decoration: none;
-        color: black;
+    img {
+        height: 60px;
     }
-   &:hover a {
-    color: rgb(68, 119, 224);
-   }
-}
-.navbar ul li:hover {
-    border-color: rgb(68, 119, 224);
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
     
+        li {
+            font-size: 13px;
+            padding:  0 15px;
+            height: 80px;
+            text-transform: uppercase;
+            line-height: 80px;
+            border-bottom: 3px transparent solid; 
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+        
+            a {
+                text-decoration: none;
+                color: black;
+            }
+           &:hover a {
+            color: rgb(68, 119, 224);
+           }
+           &:hover {
+               border-color: rgb(68, 119, 224);
+          
+           }
+        }
+    }
     
-}
+    input {
+        border: none;
+        border-bottom: rgb(68, 119, 224) 2px solid;
+        text-transform: capitalize;
+        width: 100px;
+        text-align: right;
+        padding-bottom: 5px;
+        
+        &::placeholder {
+            color: black;
+        }
+        &:focus-visible {
+            outline: none;
+        }
+    }
+} 
 
-.navbar input {
-    border: none;
-    border-bottom: rgb(68, 119, 224) 2px solid;
-    text-transform: capitalize;
-    width: 100px;
-    text-align: right;
-    padding-bottom: 5px;
-    
-}
-.navbar input::placeholder {
-    color: black;
-}
 
-.navbar input:focus-visible {
-    outline: none;
-}
 

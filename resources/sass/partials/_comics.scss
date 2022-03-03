@@ -1,0 +1,45 @@
+.card-container {
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+
+    .article-title {
+        position: absolute;
+        top:-25px;
+        background: rgb(68, 119, 224);
+        height: 50px;
+        line-height: 50px;
+        width: 170px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    .flex-box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card-box {
+            width: 130px;
+            text-align: center;
+            padding: 15px 0;
+            img {
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: top
+            };
+            h4 {
+                padding: 10px 0;
+            }
+
+        }
+    }
+    .load-button {
+        background: rgb(68, 119, 224);
+        height: 40px;
+        line-height: 40px;
+        width: 120px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
