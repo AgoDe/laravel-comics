@@ -22,13 +22,13 @@
 img {
     height: 60px;
 }
-ul {
+.navbar ul {
     display: flex;
     align-items: center;
     list-style: none;
 
 }
-li {
+.navbar ul li {
     font-size: 13px;
     padding:  0 15px;
     height: 80px;
@@ -37,26 +37,25 @@ li {
     line-height: 80px;
     border-bottom: 3px transparent solid; 
 }
-li:hover {
+.navbar ul li:hover {
     border-color: rgb(68, 119, 224);
     color: rgb(68, 119, 224);
 }
 
-input {
+.navbar input {
     border: none;
     border-bottom: rgb(68, 119, 224) 2px solid;
     text-transform: capitalize;
     width: 100px;
     text-align: right;
     padding-bottom: 5px;
+    
+}
+.navbar input::placeholder {
+    color: black;
+}
 
-    &::placeholder {
-        color: black;
-    }
-
-    &:focus-visible {
-        outline: none;
-    }
-
+.navbar input:focus-visible {
+    outline: none;
 }
 
