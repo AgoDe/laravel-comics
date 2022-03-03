@@ -12,24 +12,27 @@
 }
 .upper {
     text-transform: uppercase;
-}
-.blue-bar {
-    height: 20px;
+}.blue-bar {
     background-color:rgb(68, 119, 224);
-    color: white;
-  
+    color: white;    
 }
 .blue-bar > .container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    height: 20px;
+    
 }
-.navbar.container {
+.blue-bar .container div {
+    margin: 0 15px;
+    font-size: 11px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
+} 
 img {
     height: 60px;
 }
@@ -37,6 +40,7 @@ ul {
     display: flex;
     align-items: center;
     list-style: none;
+
 }
 li {
     font-size: 13px;
@@ -45,12 +49,13 @@ li {
     text-transform: uppercase;
     font-weight: 500;
     line-height: 80px;
-    border-bottom: 3px transparent solid;
+    border-bottom: 3px transparent solid; 
 }
 li:hover {
     border-color: rgb(68, 119, 224);
     color: rgb(68, 119, 224);
 }
+
 input {
     border: none;
     border-bottom: rgb(68, 119, 224) 2px solid;
@@ -58,18 +63,24 @@ input {
     width: 100px;
     text-align: right;
     padding-bottom: 5px;
+
+    &::-moz-placeholder {
+        color: black;
+    }
+
+    &:-ms-input-placeholder {
+        color: black;
+    }
+
+    &::placeholder {
+        color: black;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
 }
-input::-moz-placeholder {
-    color: black;
-}
-input:-ms-input-placeholder {
-    color: black;
-}
-input::placeholder {
-    color: black;
-}
-input:focus-visible {
-    outline: none;
-}
+
 
 
